@@ -36,8 +36,8 @@ func signup(context *web_frame.Context) {
 }
 
 func main() {
-	server := web_frame.NewHttpServer("test-server")
-	// server.Route("/ping", ping)
-	// server.Route("/user/signup", signup)
+	server := web_frame.NewHttpServer("test-service")
+	// service.Route("/ping", ping)
+	// service.Route("/user/signup", signup)
 	server.Run(":5160")
 }
